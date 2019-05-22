@@ -2,14 +2,279 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09476d55-fcb1-4b2e-bfb9-dbaae6c02638" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/forkilla/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/forkilla/500.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/forkilla/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/forkilla/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/forkilla/details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/forkilla/details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/forkilla/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/forkilla/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/forkilla/my_reservations.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/forkilla/my_reservations.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/.ipynb_checkpoints/p2_2018-2019_2solve-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/Albert_Einstein.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/BigBang.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/Einstein.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/ainshtein.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/ainsthtein y monro.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/amsterdam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bbc-hero-en.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00010.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00011.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00012.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00013.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00014.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00015.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00016.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00017.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00018.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00019.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00020.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00021.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00022.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00023.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00024.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00025.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00026.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00027.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00028.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00029.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00030.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00031.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00032.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00033.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00034.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00035.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00036.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00037.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00038.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00039.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00040.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00041.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00042.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00043.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00044.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00045.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00046.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00047.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00048.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00049.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00050.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00051.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00052.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00053.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00054.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00055.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00056.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00057.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00058.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00059.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00060.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00061.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00062.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00063.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00064.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00065.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00066.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00067.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00068.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00069.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00070.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00071.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00072.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00073.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00074.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00075.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00076.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00077.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00078.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00079.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00080.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00081.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00082.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00083.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00084.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00085.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00086.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00087.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00088.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00089.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00090.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00091.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00092.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00093.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00094.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00095.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00096.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00097.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00098.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00099.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00101.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00102.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00103.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00104.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00105.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00106.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00107.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00108.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00109.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00110.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00111.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00112.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00113.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00114.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00115.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00116.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00117.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00118.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00119.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00120.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00121.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00122.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00123.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00124.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00125.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00126.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00127.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00129.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00130.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00131.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00132.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00133.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00134.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00135.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00136.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00137.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00138.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00139.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00140.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00141.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00142.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00143.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00145.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00146.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00147.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00148.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00149.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00150.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00151.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00152.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00153.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00154.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00155.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00156.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00157.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00158.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00159.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00160.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00161.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00162.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00163.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00164.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00165.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00166.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00167.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00168.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00169.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00170.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00171.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00172.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00173.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00174.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00175.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00176.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00177.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00178.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00179.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00180.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00181.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00182.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00183.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00184.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00185.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00186.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00187.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00188.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00189.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00190.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00191.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00193.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00194.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00195.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00196.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00197.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00198.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00199.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/bigbangcollection/frame00200.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/buffet.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/car_gray.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/casa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/cat.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/clooney.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/corals.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/dog.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/doulphin.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/fabulous.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/face.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/hand.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/house.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/mapfre.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/monro2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/monro3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/monro4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/monro5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/monroe.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/narrative1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/narrative2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/peppers.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/sillas.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/sphinx.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/spider.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/starbuck.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/street.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images/towerWoman.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/images_for_notebook/ex21a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../P2/p2_2018-2019_2solve.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VA_P1/.ipynb_checkpoints/numpy_intro-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VA_P1/.ipynb_checkpoints/p1-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VA_P1/.ipynb_checkpoints/p1_2018-2019_2solve-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VA_P1/.ipynb_checkpoints/skimage_intro-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VA_P1/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VA_P1/black_white.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VA_P1/images/black_and_white.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VA_P1/images/black_image.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VA_P1/images/car_lowContrast.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VA_P1/images/circles.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VA_P1/images/coat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VA_P1/images/jordan.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VA_P1/images/lenna.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VA_P1/images/lenna_black_and_white.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VA_P1/images/model.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VA_P1/images/model_coat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VA_P1/images/sillas.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VA_P1/images/texture.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VA_P1/images/texture.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VA_P1/images/texture2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VA_P1/images/texture3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VA_P1/images_notebook/ex16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VA_P1/images_notebook/ex17a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VA_P1/images_notebook/ex17b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VA_P1/images_notebook/ex17c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VA_P1/images_notebook/ex17c2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VA_P1/images_notebook/ex17c3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VA_P1/images_notebook/ex17d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VA_P1/images_notebook/lena_frame.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VA_P1/images_notebook/solution_11b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VA_P1/numpy_intro.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VA_P1/p1_2018-2019_2solve.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VA_P1/skimage_intro.ipynb" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,67 +285,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="details.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/forkilla/details.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1054">
-              <caret line="62" column="6" lean-forward="true" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h4#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forkilla/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3638">
-              <caret line="250" column="15" lean-forward="true" selection-start-line="250" selection-start-column="15" selection-end-line="250" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="my_reservations.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/forkilla/my_reservations.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PracticaWeb/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-714">
-              <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+            <state relative-caret-position="363">
+              <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/forkilla/home.html">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="15">
+              <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/forkilla/base.html">
+      <file leaf-file-name="local_settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/forkilla/local_settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="79" column="49" selection-start-line="79" selection-start-column="49" selection-end-line="79" selection-end-column="49" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="108">
+              <caret line="70" column="1" lean-forward="true" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -90,8 +317,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -109,7 +336,9 @@
       <find>reservation.html</find>
       <find>review</find>
       <find>rev</find>
-      <find>review</find>
+      <find>allowed</find>
+      <find>static</find>
+      <find>databases</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -128,7 +357,6 @@
         <option value="$PROJECT_DIR$/forkilla/urls.py" />
         <option value="$PROJECT_DIR$/forkilla/views.py" />
         <option value="$PROJECT_DIR$/forkilla/models.py" />
-        <option value="$PROJECT_DIR$/PracticaWeb/settings.py" />
         <option value="$PROJECT_DIR$/templates/forkilla/reservation.html" />
         <option value="$PROJECT_DIR$/templates/forkilla/404.html" />
         <option value="$PROJECT_DIR$/templates/forkilla/500.html" />
@@ -136,14 +364,19 @@
         <option value="$PROJECT_DIR$/templates/forkilla/details.html" />
         <option value="$PROJECT_DIR$/templates/forkilla/base.html" />
         <option value="$PROJECT_DIR$/templates/forkilla/home.html" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/forkilla/local_settings.py" />
+        <option value="$PROJECT_DIR$/PracticaWeb/settings.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="921" />
-    <option name="y" value="36" />
-    <option name="width" value="960" />
-    <option name="height" value="1100" />
+    <option name="x" value="67" />
+    <option name="y" value="25" />
+    <option name="width" value="1299" />
+    <option name="height" value="743" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -156,46 +389,28 @@
         <subPane>
           <expand>
             <path>
-              <item name="PracticaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PracticaWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="A4-heroku" type="b2602c69:ProjectViewProjectNode" />
+              <item name="A4-heroku" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="PracticaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PracticaWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="A4-heroku" type="b2602c69:ProjectViewProjectNode" />
+              <item name="A4-heroku" type="462c0819:PsiDirectoryNode" />
               <item name="forkilla" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="PracticaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PracticaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="forkilla" type="462c0819:PsiDirectoryNode" />
-              <item name="fixtures" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PracticaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PracticaWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="A4-heroku" type="b2602c69:ProjectViewProjectNode" />
+              <item name="A4-heroku" type="462c0819:PsiDirectoryNode" />
               <item name="media" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="PracticaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PracticaWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="A4-heroku" type="b2602c69:ProjectViewProjectNode" />
+              <item name="A4-heroku" type="462c0819:PsiDirectoryNode" />
               <item name="PracticaWeb" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="PracticaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PracticaWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="A4-heroku" type="b2602c69:ProjectViewProjectNode" />
+              <item name="A4-heroku" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PracticaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PracticaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="forkilla" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PracticaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PracticaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="registration" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -249,10 +464,10 @@
     <option name="totallyTimeSpent" value="4942000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13854167" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13793103" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
@@ -264,16 +479,16 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32908705" />
-      <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="bottom" id="Messages" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Messages" order="7" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32908705" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,6 +501,57 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/templates/forkilla/details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="62" column="6" lean-forward="true" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forkilla/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3750">
+          <caret line="250" column="15" lean-forward="true" selection-start-line="250" selection-start-column="15" selection-end-line="250" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/forkilla/my_reservations.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PracticaWeb/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/forkilla/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/forkilla/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1185">
+          <caret line="79" column="49" selection-start-line="79" selection-start-column="49" selection-end-line="79" selection-end-column="49" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/forkilla/details.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -467,30 +733,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PracticaWeb/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PracticaWeb/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forkilla/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/forkilla/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/photos/dan-gold-298710-unsplash_3ubVIfH.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/photos/nathan-dumlao-503377-unsplash_kVcDlGP.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/photos/anastasiia-vasileva-1581240-unsplash.jpg">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/forkilla/models.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -537,13 +785,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PracticaWeb/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-714">
-          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PracticaWeb/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -558,9 +799,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/forkilla/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/forkilla/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -568,23 +806,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/forkilla/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3638">
-          <caret line="250" column="15" lean-forward="true" selection-start-line="250" selection-start-column="15" selection-end-line="250" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/forkilla/my_reservations.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/forkilla/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
+        <state relative-caret-position="1185">
           <caret line="79" column="49" selection-start-line="79" selection-start-column="49" selection-end-line="79" selection-end-column="49" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -595,22 +819,69 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/forkilla/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="585">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="30" selection-start-column="30" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="15" lean-forward="true" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/forkilla/details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="62" column="6" lean-forward="true" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
+        <state relative-caret-position="441">
+          <caret line="62" column="6" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forkilla/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="250" column="15" selection-start-line="250" selection-start-column="15" selection-end-line="250" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/forkilla/my_reservations.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forkilla/local_settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="70" column="1" lean-forward="true" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PracticaWeb/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
         </state>
       </provider>
     </entry>
