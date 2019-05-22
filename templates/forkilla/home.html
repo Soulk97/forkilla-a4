@@ -1,0 +1,39 @@
+{% extends 'forkilla/base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+
+<div style=" align-items: center; padding: 2em 0 2em 0;">
+    <h2>Welcome to Forkilla</h2>
+    <h3>Where you can find many restaurants</h3>
+    <a class="btn btn-primary" href="{% url 'restaurants' %}"> Check the restaurants </a>
+</div>
+
+{% if restaurants %}
+
+    <h2>Promoted Restaurants:</h2>
+
+    <div class="row">
+        <ul class="card-deck">
+            {% for restaurant in restaurants %}
+                {% if restaurant.is_promot %}
+                    <div class="col-3" style="width: 24vw;">
+                        <div class="card" >
+                            <a href="{% url 'details' restaurant.restaurant_number %}">
+                                <div class="featured-image" style="background-image:url('{{restaurant.featured_photo.url}}')" alt="{{restaurant.name}}"></div>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">{{restaurant.get_human_city}}{{restaurant.name}}</h5>
+                                <p class="card-text">{{restaurant.menu_description}}</p>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                {% endif %}
+            {% endfor%}
+        </ul>
+    </div>
+
+{% endif %}
+
+
+{% endblock %}

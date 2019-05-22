@@ -1,0 +1,35 @@
+{% extends 'forkilla/base.html' %}
+{% block title %}{{restaurant.name}} Reservation{% endblock %}
+{% block content %}
+
+    {%  if result == "OK" %}
+      <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+        <div class="card-header">SUCCESS!</div>
+        <div class="card-body">
+          <h3 class="card-title">Reservation made succesfully</h3>
+          <div class="card-text">
+            <ul>
+                <li> Restaurant: {{ restaurant.name }} </li>
+                <li> Reservation ID: {{ reservation.id }} </li>
+                <li> Date: {{ reservation.day }}, {{ reservation.get_human_slot }} </li>
+                <li> Number of people: {{ reservation.num_people }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    {% else %}
+
+      <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+        <div class="card-header">ERROR</div>
+        <div class="card-body">
+          <h5 class="card-title">Reservation could not be done</h5>
+          <p class="card-text">Reservation could not be done for the restaurant {{restaurant.name}}</p>
+        </div>
+      </div>
+
+
+    {% endif %}
+
+    <a class="btn btn-primary" href="{% url 'index'%}">Home</a>
+
+{% endblock %}

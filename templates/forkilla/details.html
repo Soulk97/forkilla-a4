@@ -1,0 +1,66 @@
+{% extends 'forkilla/base.html' %}
+{% block title %}{{restaurant.name}}{% endblock %}
+{% block content %}
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="{% url 'index'%}">Home</a></li>
+    <li class="breadcrumb-item"><a href="{% url 'restaurants' restaurant.city %}">{{restaurant.city|title}}</a></li>
+    <li class="breadcrumb-item"><a href="{% url 'restaurants' restaurant.city restaurant.category %}">{{restaurant.category|title}}</a></li>
+    <li class="breadcrumb-item"> {{restaurant.name}} </li>
+  </ol>
+</nav>
+
+<div class="card mb-3" style="width: 100%;">
+    <div class="row no-gutters">
+        <div class="col-md-4" >
+            <img src="{{restaurant.featured_photo.url}}" class="card-img" style="height: 100%;">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+               <h3 class="card-title" style="text-align: center;"><strong>{{restaurant.name}}</strong></h3>
+               {% if restaurant.is_promot %}
+                    <p class="card-text alert-success" style="text-align: center;"> PROMOTED RESTAURANT </p>
+               {% endif %}
+                <ul class="card-text list-group list-group-flush">
+                    <li class="list-group-item"> <b> Menu Description:</b> {{restaurant.menu_description}} </li>
+                    <li class="list-group-item"> <b>Price AVG:</b> {{restaurant.price_average}} €</li>
+                    <li class="list-group-item"> <b>Rate:</b> {{restaurant.rate}}/5 </li>
+                    <li class="list-group-item"> <b>Category:</b> {{restaurant.get_human_category}} </li>
+                    <li class="list-group-item"> <b>City:</b> {{restaurant.city}} </li>
+                    <li class="list-group-item"> <b>Address:</b> {{restaurant.address}} </li>
+                    <li class="list-group-item"> <b>Country:</b> {{restaurant.country}} </li>
+                </ul>
+                <br>
+                <form action="{% url 'reservation'%}" method="get">
+                    <button class="btn btn-primary btn-lg btn-block" type="submit" name="reservation" value={{restaurant.restaurant_number}}>Make a Reservation</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br>
+
+<form method="POST" action="{% url 'review' restaurant.restaurant_number %}">
+    <div class="form-group">
+        {% csrf_token %}
+        <label for="id_comment"> <h4>Make a Review:</h4> </label>
+        <textarea name="comment" class="form-control" rows="3" placeholder="Comment here..." required id="id_comment"></textarea>
+        <br>
+        <button class="btn btn-primary btn-block" type="submit" name="comment">Review</button>
+    </div>
+</form>
+
+
+<div style="width: 100%">
+    <h4>Reviews:</h4>
+    <br>
+    {% for rev in restaurant.comments.all %}
+        <p>{{rev.comment}}</p>
+        <br>
+    {% endfor %}
+</div>
+
+
+{% endblock %}

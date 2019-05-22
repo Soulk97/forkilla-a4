@@ -1,0 +1,14 @@
+{% extends 'forkilla/base.html' %}
+{% block title %}Registration{% endblock %}
+{% block content %}
+
+<div class="jumbotron">
+  <h1>Create an account</h1>
+
+  <form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input class="btn btn-primary" type="submit" value="Create the account">
+  </form>
+</div>
+{% endblock %}

@@ -1,0 +1,206 @@
+[
+  {
+    "model": "forkilla.Restaurant",
+    "pk": 1,
+    "fields": {
+      "restaurant_number": "09186777",
+      "name": "Only Tapas",
+      "menu_description" :"TAPAS",
+      "price_average" : "30",
+      "is_promot" : "False",
+      "rate" : "3",
+      "category" : "Medi",
+      "city": "Barcelona",
+      "address": "Les Rambles, 33",
+      "country": "Spain",
+      "capacity": 40
+    }
+  },
+  {
+    "model": "forkilla.Restaurant",
+    "pk": 2,
+    "fields": {
+      "restaurant_number": "09186666",
+      "name": "Kyoza Take Away",
+      "menu_description" :"Japanese and Chinese food to take away",
+      "price_average" : "130.33",
+      "is_promot" : "True",
+      "rate" : "4",
+      "category" : "Basq",
+      "city": "Barcelona",
+      "address": "Tallers, 81",
+      "country": "Spain",
+      "capacity": 240
+    }
+  },
+    {
+    "model": "forkilla.Restaurant",
+    "pk": 3,
+    "fields": {
+      "restaurant_number": "09100003",
+      "name": "Makala",
+      "menu_description" :"Try out our chinese and mexican food",
+      "price_average" : "420.69",
+      "is_promot" : "False",
+      "rate" : "2",
+      "category" : "Fusi",
+      "city": "Barcelona",
+      "address": "Calle falsa, 111",
+      "country": "Spain",
+      "capacity": 80
+    }
+  },
+    {
+    "model": "forkilla.Restaurant",
+    "pk": 4,
+    "fields": {
+      "restaurant_number": "09100004",
+      "name": "Green House",
+      "menu_description" :"Come to eat your lovely greens <3",
+      "price_average" : "130.33",
+      "is_promot" : "True",
+      "rate" : "3",
+      "category" : "Vegy",
+      "city": "Barcelona",
+      "address": "Gran Via de les Corts Catalanes, 420",
+      "country": "Spain",
+      "capacity": 240
+    }
+  },
+    {
+    "model": "forkilla.Restaurant",
+    "pk": 5,
+    "fields": {
+      "restaurant_number": "09100005",
+      "name": "Argos&Marlos",
+      "menu_description" :"Soul food with lots of love from our granny <3",
+      "price_average" : "997.31",
+      "is_promot" : "False",
+      "rate" : "3",
+      "category" : "Fusi",
+      "city": "Dublin",
+      "address": "Aqui, 495",
+      "country": "Ireland",
+      "capacity": 120
+    }
+  },
+    {
+    "model": "forkilla.Restaurant",
+    "pk": 6,
+    "fields": {
+      "restaurant_number": "09100006",
+      "name": "Baker's Paradise",
+      "menu_description" :"Prepare yourself to get fatter with pleasure",
+      "price_average" : "130.33",
+      "is_promot" : "True",
+      "rate" : "5",
+      "category" : "Fusi",
+      "city": "Barcelona",
+      "address": "Pelayo, 5",
+      "country": "Spain",
+      "capacity": 240
+    }
+  },
+    {
+    "model": "forkilla.Restaurant",
+    "pk": 7,
+    "fields": {
+      "restaurant_number": "09100007",
+      "name": "Saladass",
+      "menu_description" :"Tons and tons of greens waiting for you",
+      "price_average" : "130.33",
+      "is_promot" : "True",
+      "rate" : "4",
+      "category" : "Vegy",
+      "city": "Barcelona",
+      "address": "Gran Via de les Corts Catalanes, 234",
+      "country": "Spain",
+      "capacity": 133
+    }
+  },
+    {
+    "model": "forkilla.Restaurant",
+    "pk": 8,
+    "fields": {
+      "restaurant_number": "09100008",
+      "name": "Frozen Sweets",
+      "menu_description" :"Come and grab one of our homemade ice creams, they're delicious",
+      "price_average" : "130.33",
+      "is_promot" : "True",
+      "rate" : "1",
+      "category" : "Fusi",
+      "city": "Barcelona",
+      "address": "Gran Via de les Corts Catalanes, 95",
+      "country": "Spain",
+      "capacity": 240
+    }
+  },
+  {
+    "model": "forkilla.Restaurant",
+    "pk": 9,
+    "fields": {
+      "restaurant_number": "09100009",
+      "name": "Tapatio",
+      "menu_description" :"Tapas~ Tapas~~ Tapas~~~ BASQUE TAPAAAAAS",
+      "price_average" : "130.33",
+      "is_promot" : "True",
+      "rate" : "3",
+      "category" : "Basq",
+      "city": "Barcelona",
+      "address": "Calle 21, 15",
+      "country": "Spain",
+      "capacity": 20
+    }
+  },
+    {
+    "model": "forkilla.Restaurant",
+    "pk": 10,
+    "fields": {
+      "restaurant_number": "09100010",
+      "name": "Submarine",
+      "menu_description" :"Eat Tons of Fresh Seafood",
+      "price_average" : "130.33",
+      "is_promot" : "False",
+      "rate" : "5",
+      "category" : "Medi",
+      "city": "Barcelona",
+      "address": "Diputacio, 45",
+      "country": "Spain",
+      "capacity": 240
+    }
+  },
+    {
+    "model": "forkilla.Restaurant",
+    "pk": 11,
+    "fields": {
+      "restaurant_number": "09100011",
+      "name": "Black Roast",
+      "menu_description" :"A peaceful and enjoyable coffee shop",
+      "price_average" : "130.33",
+      "is_promot" : "False",
+      "rate" : "5",
+      "category" : "Crep",
+      "city": "Barcelona",
+      "address": "Diputacio, 12",
+      "country": "Spain",
+      "capacity": 240
+    }
+  },
+    {
+    "model": "forkilla.Restaurant",
+    "pk": 12,
+    "fields": {
+      "restaurant_number": "09100012",
+      "name": "Only Pinxos",
+      "menu_description" :"PINXOS",
+      "price_average" : "130.33",
+      "is_promot" : "False",
+      "rate" : "1",
+      "category" : "Basq",
+      "city": "Barcelona",
+      "address": "Gran Via de les Corts Catalanes, 495",
+      "country": "Spain",
+      "capacity": 240
+    }
+  }
+]

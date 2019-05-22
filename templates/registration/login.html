@@ -1,0 +1,30 @@
+{% extends 'forkilla/base.html' %}
+{% block title %}Login{% endblock %}
+{% block content %}
+
+  {% if form.errors %}
+    <div class="alert alert-danger" role="alert">
+      <p class="error">Sorry, that's not a valid username or password</p>
+    </div>
+  {% endif %}
+
+  <form method="POST" action="">
+    <div class="jumbotron" style="align-items: center; display: flex; justify-content: center;">
+      <div class="span centering">
+        <div class="form-group">
+          {% csrf_token %}
+          <label for="username">Username:</label>
+          <input type="text" name="username" value="" id="username">
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" name="password" value="" id="password">
+          <input type="hidden" name="next" value="{{ next|escape }}" />
+        </div>
+        <input class="btn btn-primary" type="submit" value="Login"/>
+        <a class="btn btn-primary" href="{% url 'index'%}">Back</a>
+      </div>
+    </div>
+  </form>
+
+{% endblock %}

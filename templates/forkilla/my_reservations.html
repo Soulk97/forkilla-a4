@@ -1,0 +1,56 @@
+{% extends 'forkilla/base.html' %}
+
+{% block title %}My Reservations{% endblock %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+    Reservations of {{user.username}}
+    <br>
+
+    {% if future_reservations %}
+        Future reservations:
+        {% for reservation in future_reservations %}
+            <ul>
+                <li><a href="{% url 'details' reservation.restaurant.restaurant_number %}"> {{reservation.restaurant.name}} </a></li>
+                <li>Day: {{reservation.day}}</li>
+                <li>Time Slot: {{reservation.get_human_slot}}</li>
+                <li>Number of people: {{reservation.num_people}}</li>
+
+                <form action="{% url 'delete_reservation' %}" method="GET">
+                    <button type="submit" name="reservation_id" value={{reservation.id}}> 	Delete Reservation</button>
+                </form>
+            </ul>
+
+
+        {% endfor %}
+    {% endif %}
+
+
+    {% if past_reservations %}
+        Past reservations:
+        {% for reservation in past_reservations %}
+            <ul>
+            <li><a href="{% url 'details' reservation.restaurant.restaurant_number %}"> {{reservation.restaurant.name}} </a></li>
+            <li>Day: {{reservation.day}}</li>
+            <li>Time Slot: {{reservation.get_human_slot}}</li>
+            <li>Number of people: {{reservation.num_people}}</li>
+            </ul>
+
+            <div>
+                <form method="POST" action="{% url 'review' reservation.restaurant.restaurant_number %}">
+                    {% csrf_token %}
+                    {{form.as_p}}
+                    <input type="submit" name="comment" value="Review">
+                </form>
+            </div>
+        {% endfor %}
+    {% endif %}
+
+
+
+{% endif %}
+
+<a class="btn btn-primary" href="{% url 'index' %}"> Back </a>
+
+{% endblock %}
