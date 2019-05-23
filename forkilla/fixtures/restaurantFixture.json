@@ -13,6 +13,7 @@
       "city": "Barcelona",
       "address": "Les Rambles, 33",
       "country": "Spain",
+      "featured_photo": "http://localhost:8000/media/photos/micheile-henderson-1536000-unsplash_QmguGnz.jpg",
       "capacity": 40
     }
   },
@@ -26,10 +27,11 @@
       "price_average" : "130.33",
       "is_promot" : "True",
       "rate" : "4",
-      "category" : "Basq",
+      "category" : "Chin",
       "city": "Barcelona",
       "address": "Tallers, 81",
       "country": "Spain",
+      "featured_photo": "http://localhost:8000/media/photos/miguel-maldonado-665971-unsplash_3NwV2J0.jpg",
       "capacity": 240
     }
   },
@@ -47,6 +49,7 @@
       "city": "Barcelona",
       "address": "Calle falsa, 111",
       "country": "Spain",
+      "featured_photo": "http://localhost:8000/media/photos/abhishek-sanwa-limbu-782224-unsplash_lmJxUK0_mnBRMVY.jpg",
       "capacity": 80
     }
   },
@@ -64,6 +67,7 @@
       "city": "Barcelona",
       "address": "Gran Via de les Corts Catalanes, 420",
       "country": "Spain",
+      "featured_photo": "http://localhost:8000/media/photos/dan-gold-298710-unsplash_3ubVIfH_CyJKogZ_JfsRJ9D.jpg",
       "capacity": 240
     }
   },
@@ -81,6 +85,7 @@
       "city": "Dublin",
       "address": "Aqui, 495",
       "country": "Ireland",
+      "featured_photo": "http://localhost:8000/media/photos/kelsey-curtis-1552813-unsplash_LWlJSns.jpg",
       "capacity": 120
     }
   },
@@ -98,6 +103,7 @@
       "city": "Barcelona",
       "address": "Pelayo, 5",
       "country": "Spain",
+      "featured_photo": "http://localhost:8000/media/photos/brooke-lark-489110-unsplash_AQkbfDj_wF1bo65.jpg",
       "capacity": 240
     }
   },
@@ -115,6 +121,7 @@
       "city": "Barcelona",
       "address": "Gran Via de les Corts Catalanes, 234",
       "country": "Spain",
+      "featured_photo": "http://localhost:8000/media/photos/markus-spiske-1505407-unsplash_FeKyddJ_ctCDyij.jpg",
       "capacity": 133
     }
   },
@@ -132,6 +139,7 @@
       "city": "Barcelona",
       "address": "Gran Via de les Corts Catalanes, 95",
       "country": "Spain",
+      "featured_photo": "http://localhost:8000/media/photos/ian-dooley-281897-unsplash_hQzsC8y.jpg"
       "capacity": 240
     }
   },
@@ -149,6 +157,7 @@
       "city": "Barcelona",
       "address": "Calle 21, 15",
       "country": "Spain",
+      "featured_photo": "http://localhost:8000/media/photos/john-canelis-315713-unsplash_laQUsGK.jpg",
       "capacity": 20
     }
   },
@@ -166,6 +175,7 @@
       "city": "Barcelona",
       "address": "Diputacio, 45",
       "country": "Spain",
+      "featured_photo": "http://localhost:8000/media/photos/anastasiia-vasileva-1581240-unsplash_nXGTQXs_kkDLe4M.jpg",
       "capacity": 240
     }
   },
@@ -183,6 +193,7 @@
       "city": "Barcelona",
       "address": "Diputacio, 12",
       "country": "Spain",
+      "featured_photo": "http://localhost:8000/media/photos/nathan-dumlao-503377-unsplash_kVcDlGP_oZ9cu6S.jpg"
       "capacity": 240
     }
   },
@@ -200,6 +211,7 @@
       "city": "Barcelona",
       "address": "Gran Via de les Corts Catalanes, 495",
       "country": "Spain",
+      "featured_photo": "http://localhost:8000/media/photos/eiliv-sonas-aceron-1417344-unsplash_TqkYxCV_umdmlhz.jpg"
       "capacity": 240
     }
   }
