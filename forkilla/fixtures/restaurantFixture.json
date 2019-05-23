@@ -139,7 +139,7 @@
       "city": "Barcelona",
       "address": "Gran Via de les Corts Catalanes, 95",
       "country": "Spain",
-      "featured_photo": "http://localhost:8000/media/photos/ian-dooley-281897-unsplash_hQzsC8y.jpg"
+      "featured_photo": "http://localhost:8000/media/photos/ian-dooley-281897-unsplash_hQzsC8y.jpg",
       "capacity": 240
     }
   },
@@ -193,7 +193,7 @@
       "city": "Barcelona",
       "address": "Diputacio, 12",
       "country": "Spain",
-      "featured_photo": "http://localhost:8000/media/photos/nathan-dumlao-503377-unsplash_kVcDlGP_oZ9cu6S.jpg"
+      "featured_photo": "http://localhost:8000/media/photos/nathan-dumlao-503377-unsplash_kVcDlGP_oZ9cu6S.jpg",
       "capacity": 240
     }
   },
@@ -211,7 +211,7 @@
       "city": "Barcelona",
       "address": "Gran Via de les Corts Catalanes, 495",
       "country": "Spain",
-      "featured_photo": "http://localhost:8000/media/photos/eiliv-sonas-aceron-1417344-unsplash_TqkYxCV_umdmlhz.jpg"
+      "featured_photo": "http://localhost:8000/media/photos/eiliv-sonas-aceron-1417344-unsplash_TqkYxCV_umdmlhz.jpg",
       "capacity": 240
     }
   }
