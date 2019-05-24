@@ -19,7 +19,7 @@
                     <div class="col-3" style="width: 24vw;">
                         <div class="card" >
                             <a href="{% url 'details' restaurant.restaurant_number %}">
-                                <img class="card-img-top" id="promoted_res" src="{{restaurant.featured_photo.url}}" alt="{{restaurant.name}}"></div>
+                                <div class="featured-image" style="background-image:url('{{restaurant.featured_photo.url}}')" alt="{{restaurant.name}}"></div>
                             </a>
                             <div class="card-body">
                                 <h5 class="card-title">{{restaurant.get_human_city}}{{restaurant.name}}</h5>
