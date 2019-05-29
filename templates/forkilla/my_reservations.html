@@ -51,11 +51,8 @@
                                 <p class="card-text"><strong>Day:</strong> {{reservation.day}}</p>
                                 <p class="card-text"><strong>Time Slot:</strong> {{reservation.get_human_slot}}</p>
                                 <p class="card-text"><strong>Number of people:</strong> {{reservation.num_people}}</p>
-                                <form method="POST" action="{% url 'review' reservation.restaurant.restaurant_number %}">
-                                    {% csrf_token %}
-                                    {{form.as_p}}
-                                    <input class="btn btn-primary btn-block" type="submit" name="comment" value="Review">
-                                </form>
+
+                                <a class="btn btn-primary btn-block" href="{% url 'details' reservation.restaurant.restaurant_number %}" > Make a Review </a>
                                 <hr>
                                 <form action="{% url 'delete_reservation' %}" method="GET">
                                     <button class="btn btn-danger btn-block"type="submit" name="reservation_id" value={{reservation.id}}> 	Remove</button>
