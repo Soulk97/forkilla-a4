@@ -27,12 +27,11 @@ router = routers.DefaultRouter()
 router.register(r'restaurants', views.RestaurantViewSet)
 
 urlpatterns = [
-    url(r'^$', include('forkilla.urls')),
     url(r'^forkilla/', include('forkilla.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^accounts/login/$',  login,  name='login'),
     url(r'^accounts/logout/$',  logout,  {'next_page': '/forkilla'}, name='logout'),
-
+    url(r'^$', include('forkilla.urls')),
     # Wire up our API using automatic URL routing.
     # Additionally, we include login URLs for the browsable API.
     url(r'^api/', include(router.urls)),
