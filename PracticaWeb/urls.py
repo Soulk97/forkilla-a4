@@ -39,8 +39,8 @@ urlpatterns = [
 
 ]
 
-handler404 = 'forkilla.views.handler404'
-handler500 = 'forkilla.views.handler500'
+#handler404 = 'forkilla.views.handler404'
+#handler500 = 'forkilla.views.handler500'
 
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
