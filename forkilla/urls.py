@@ -6,12 +6,12 @@ from . import views
 urlpatterns = [
 
     url(r'^$', views.index, name='index'),
+    url(r'^restaurant/(?P<restaurant_number>.*)/review$', views.add_comment, name='review'),
     url(r'^register/$', views.register, name='register'),
     url(r'^restaurants/$', views.restaurants, name='restaurants'),
     url(r'^restaurants/(?P<city>.*)/$', views.restaurants, name='restaurants'),
     url(r'^restaurants/(?P<city>.*)/(?P<category>.*)$', views.restaurants, name='restaurants'),
     url(r'^restaurant/(?P<restaurant_number>.*)/', views.details, name='details'),
-    url(r'^restaurant/(?P<restaurant_number>.*)/review$', views.review, name='review'),
     url(r'^reservation/$', views.reservation, name='reservation'),
     url(r'^checkout/$', views.checkout, name='checkout'),
     url(r'^search/$', views.search, name='search'),

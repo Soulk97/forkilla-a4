@@ -2,12 +2,13 @@
 {% block title %}{{restaurant.name}} Reservation{% endblock %}
 {% block content %}
 
+<div style="margin-top: 1rem; ">
     {%  if result == "OK" %}
-      <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
-        <div class="card-header">SUCCESS!</div>
+    <div class="card text-white bg-success mb-3" style="width: 100%;">
+        <div class="card-header" style="text-align: center;">SUCCESS!</div>
         <div class="card-body">
-          <h3 class="card-title">Reservation made succesfully</h3>
-          <div class="card-text">
+          <h3 class="card-title"  style="text-align: center">Reservation made succesfully</h3>
+          <div class="card-text"  style="text-align: center">
             <ul>
                 <li> Restaurant: {{ restaurant.name }} </li>
                 <li> Reservation ID: {{ reservation.id }} </li>
@@ -27,9 +28,9 @@
         </div>
       </div>
 
-
     {% endif %}
-
-    <a class="btn btn-primary" href="{% url 'index'%}">Home</a>
-
+    <div>
+        <a class="btn btn-primary btn-block" href="{% url 'index'%}">Home</a>
+    </div>
+</div>
 {% endblock %}

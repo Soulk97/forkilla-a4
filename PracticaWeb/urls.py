@@ -18,6 +18,13 @@ from django.contrib import admin
 from django.contrib.auth.views import login, logout
 from django.conf import settings
 from django.conf.urls.static import static
+from rest_framework import routers
+from forkilla import views
+
+
+# API
+router = routers.DefaultRouter()
+router.register(r'restaurants', views.RestaurantViewSet)
 
 urlpatterns = [
     url(r'^forkilla/', include('forkilla.urls')),
@@ -25,7 +32,16 @@ urlpatterns = [
     url(r'^accounts/login/$',  login,  name='login'),
     url(r'^accounts/logout/$',  logout,  {'next_page': '/forkilla'}, name='logout'),
 
+    # Wire up our API using automatic URL routing.
+    # Additionally, we include login URLs for the browsable API.
+    url(r'^api/', include(router.urls)),
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+
 ]
+
+handler404 = 'forkilla.views.handler404'
+handler500 = 'forkilla.views.handler500'
 
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    #urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

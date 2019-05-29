@@ -2,27 +2,31 @@
 {% block title %}Home{% endblock %}
 {% block content %}
 
-<div style=" align-items: center; padding: 2em 0 2em 0;">
-    <h2>Welcome to Forkilla</h2>
-    <h3>Where you can find many restaurants</h3>
-    <a class="btn btn-primary" href="{% url 'restaurants' %}"> Check the restaurants </a>
+
+<div class="jumbotron" style=" margin-top: 3rem; width: 100%;">
+    <div style="align-items: center; padding: 2em 0 2em 0; text-align: center;">
+        <h1><strong>Welcome to Forkilla</strong></h1>
+        <h3>Where you can find many restaurants</h3>
+        <a class="btn btn-primary btn-lg" href="{% url 'restaurants' %}"> Check the restaurants </a>
+    </div>
 </div>
 
 {% if restaurants %}
 
-    <h2>Promoted Restaurants:</h2>
+    <h1 style="text-align: center;">Promoted Restaurants</h1>
 
-    <div class="row">
-        <ul class="card-deck">
+    <hr>
+    <div class="row" style="margin-left: -3.35rem; margin-right: 1rem;">
+        <ul class="card-deck" >
             {% for restaurant in restaurants %}
                 {% if restaurant.is_promot %}
                     <div class="col-3" style="width: 24vw;">
-                        <div class="card" >
+                        <div class="card" id="card-home">
                             <a href="{% url 'details' restaurant.restaurant_number %}">
-                                <div class="featured-image" style="background-image:url('{{restaurant.featured_photo.url}}')" alt="{{restaurant.name}}"></div>
+                                <div class="featured-image" style="background-image:url('{{restaurant.featured_photo}}')" alt="{{restaurant.name}}"></div>
                             </a>
                             <div class="card-body">
-                                <h5 class="card-title">{{restaurant.get_human_city}}{{restaurant.name}}</h5>
+                                <h5 class="card-title"><strong>{{restaurant.name}}</strong></h5>
                                 <p class="card-text">{{restaurant.menu_description}}</p>
                             </div>
                         </div>
@@ -32,6 +36,7 @@
             {% endfor%}
         </ul>
     </div>
+    <hr>
 
 {% endif %}
 

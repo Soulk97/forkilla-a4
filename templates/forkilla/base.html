@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {% load staticfiles  %}
-    <link href="https://fonts.googleapis.com/css?family=Arbutus+Slab&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -23,15 +19,31 @@
 
         .featured-image {
             width: 100%;
-            height: 8rem;
+            height: 18rem;
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
         }
 
         .card{
-            width: 15vw;
+            width: 100%;
+            margin-top: 1rem;
             margin-bottom: 1em;
+        }
+
+        .navbar-brand {
+            display: inline-block;
+            padding-top: .3125rem;
+            padding-bottom: .3125rem;
+            margin-right: 1rem;
+            font-size: 1.7rem;
+            line-height: inherit;
+            white-space: nowrap;
+            font-weight: bold;
+        }
+
+        #card-home{
+            height: 90%;
         }
 
     </style>
@@ -39,11 +51,9 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-dark bg-dark">
+        <nav class="navbar navbar-dark fixed-top" style="background-color: rgba(0,0,0,1)!important;">
             <!-- Navbar content -->
-
-            <a class="navbar-brand"  href="{% url 'index' %}"  style="font-family: 'Bitter', serif; size=1.75rem;">Forkilla</a>
-
+            <a class="navbar-brand" id="brand" href="{% url 'index' %}" style="font-family: 'Arima Madurai', cursive;">Forkilla</a>
             <form type="get" action="{% url 'search'%}" class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" id="search_box" type="text" name="q" value="{{query|escape}}" placeholder="Search...">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -61,34 +71,35 @@
                 </div>
             {% else %}
                 <div class="btn-group" role="group">
-                    <a class="btn btn-primary btn-sm" href="{% url 'login' %}">Log In</a>
-                    <a class="btn btn-primary btn-sm" href="{% url 'register' %}">Register</a>
+                    <a class="btn btn-primary btn-md" href="{% url 'login' %}">Log In</a>
+                    <a class="btn btn-outline-light btn-md" href="{% url 'register' %}">Register</a>
                 </div>
             {% endif %}
-
         </nav>
-
     </header>
 
-    <div class="container-fluid" style="width: 65vw;">
+    <div class="container-fluid" style="font-family: 'Arima Madurai', cursive; margin-top: 80px; ">
 
         {% block content%}
         {% endblock %}
 
         <br>
-        <div class="last_viewed" style="font-family: 'Arbutus Slab', serif;">
-           <h4>Your last viewed Restaurants:</h4>
-
-            <form action="{% url 'reservation'%}" method="GET">
-                {% for restaurant in viewedrestaurants.restaurantinsertdate_set.all|slice:"5"%}
-                    <a href="{% url 'details' restaurant.restaurant.restaurant_number%}">{{restaurant.restaurant.name}} </a> ({{restaurant.restaurant.rate}}) : 	{{restaurant.restaurant.menu_description}}
-                    <button type="submit" name="reservation" value={{restaurant.restaurant.restaurant_number}}>Book</button>
-                    <br>
-                {% endfor %}
-            </form>
-
+        <div class="jumbotron" style="width: 100%;">
+            <div class="list-group list-group-flush">
+                <h4 class="list-group-item list-group-item-action active" style="text-align: center; border-radius: 0.5rem;">Your last viewed Restaurants:</h4>
+                <div class="d-flex w-100 justify-content-between">
+                    <form action="{% url 'reservation'%}" method="GET" style="width: 100%; text-align: center; align-items: center;">
+                        {% for restaurant in viewedrestaurants.restaurantinsertdate_set.all|slice:"5"%}
+                            <div class="list-group-item" style="background: transparent;">
+                                <a href="{% url 'details' restaurant.restaurant.restaurant_number%}">{{restaurant.restaurant.name}} </a> ({{restaurant.restaurant.rate}}) : 	{{restaurant.restaurant.menu_description}}
+                                <button class="btn btn-primary" type="submit" name="reservation" value={{restaurant.restaurant.restaurant_number}}>    Book</button>
+                                <br>
+                            </div>
+                        {% endfor %}
+                    </form>
+                </div>
+            </div>
         </div>
-
     </div>
 </body>
 </html>

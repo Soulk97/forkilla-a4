@@ -11,6 +11,25 @@ from .models import Restaurant, ViewedRestaurants, RestaurantInsertDate, Reserva
 from .forms import ReservationForm, ReviewForm
 from datetime import datetime
 
+# Restful
+from django.contrib.auth.models import User, Group
+from rest_framework import viewsets
+from .serializers import RestaurantSerializer
+
+@login_required
+def add_comment(request, restaurant_number=""):
+    restaurant = Restaurant.objects.get(restaurant_number=restaurant_number)
+    if request.method == "POST":
+        comment = request.POST['comment']
+        user = request.user
+        review = Review()
+        review.restaurant = restaurant
+        review.user = user
+        review.comment = comment
+
+        review.save()
+
+    return details(request, restaurant_number)
 
 def index(request):
     viewedrestaurants = _check_session(request)
@@ -46,30 +65,7 @@ def restaurants(request, city="", category=""):
     return render(request, 'forkilla/restaurants.html', context)
 
 
-@login_required
-def review(request, restaurant_number=""):
-    restaurant = Restaurant.objects.get(restaurant_number=restaurant_number)
-
-    try:
-        if request.method == "POST":
-            form = ReviewForm(request.POST)
-
-            if form.is_valid():
-                rev = form.save(commit=False)
-                rev.restaurant = restaurant
-                rev.user = request.user
-                rev.save()
-
-                return details(request, restaurant_number)
-            else:
-                return HttpResponse("Invalid form")
-
-    except Restaurant.DoesNotExist:
-        return HttpResponseNotFound("Restaurant does not exist")
-
-
 def details(request, restaurant_number):
-
     try:
         viewedrestaurants = _check_session(request)
         restaurant = Restaurant.objects.get(restaurant_number=restaurant_number)
@@ -96,7 +92,7 @@ def details(request, restaurant_number):
             }
 
     except Restaurant.DoesNotExist:
-        return HttpResponseNotFound('<h1>Restaurant not found</h1>')
+        return handler404(request)
 
     return render(request, 'forkilla/details.html', context)
 
@@ -158,7 +154,7 @@ def reservation(request):
             }
 
     except Restaurant.DoesNotExist:
-        return HttpResponse("Restaurant Does not exist")
+        return handler404(request)
 
     return render(request, 'forkilla/reservation.html', context)
 
@@ -253,3 +249,22 @@ def register(request):
     else:
         form = UserCreationForm()
     return render(request, "registration/register.html", {'form': form})
+
+
+class RestaurantViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows Restaurants to be viewed or edited.
+    """
+    queryset = Restaurant.objects.all().order_by('category')
+    serializer_class = RestaurantSerializer
+
+def handler404(request):
+    response = render(request, 'forkilla/404.html', {})
+    response.status_code = 404
+    return response
+
+
+def handler500(request):
+    response = render(request,'forkilla/500.html',{})
+    response.status_code = 500
+    return response

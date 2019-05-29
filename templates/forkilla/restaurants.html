@@ -3,14 +3,14 @@
 {% block content %}
 
 {% if city %}
-  <nav aria-label="breadcrumb">
+  <nav aria-label="breadcrumb"  style="margin-top: 1rem;">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="{% url 'index'%}">Home</a></li>
       <li class="breadcrumb-item"><a href="{% url 'restaurants' city %}">{{city|title}}</a></li>
     </ol>
   </nav>
 {% else %}
-  <nav aria-label="breadcrumb">
+  <nav aria-label="breadcrumb"  style="margin-top: 1rem;">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="{% url 'index'%}">Home</a></li>
     </ol>
@@ -29,14 +29,14 @@
     {% for restaurant in restaurants %}
 
         {% ifchanged restaurant.category %}
-            <h3 class="list-group-item list-group-item-info"><a href="{% url 'restaurants' restaurant.city restaurant.category %}"> {{restaurant.get_human_category}} </a></h3>
+            <h3 class="list-group-item list-group-item-info"><a href="{% url 'restaurants' restaurant.city restaurant.category %}"> <strong>{{restaurant.get_human_category}} : </strong> </a></h3>
         {% endifchanged %}
 
         {% if city %}
-          <li class="list-group-item"><a href="{% url 'details' restaurant.restaurant_number %}"> {{restaurant.name}} </a> : {{restaurant.menu_description}}</li>
+          <h5 class="list-group-item"><a href="{% url 'details' restaurant.restaurant_number %}"> <strong>{{restaurant.name}}</strong> </a> : {{restaurant.menu_description}}</h5>
 
         {% else %}
-    	    <li class="list-group-item"><a href="{% url 'restaurants' restaurant.city %}"> {{restaurant.city}} </a>  {{restaurant.name}}  : {{restaurant.menu_description}}</li>
+    	    <h5 class="list-group-item"><a class="badge badge-dark" href="{% url 'restaurants' restaurant.city %}"> <strong>{{restaurant.city}}: </strong> </a>  <a href="{% url 'details' restaurant.restaurant_number %}"> <strong>{{restaurant.name}}</strong> </a>  : {{restaurant.menu_description}}</h5>
 
         {% endif %}
     {% endfor %}

@@ -36,7 +36,7 @@ class Restaurant(models.Model):
     address = models.CharField(max_length=50)
     city = models.CharField(max_length=50)
     country = models.CharField(max_length=50)
-    featured_photo = models.ImageField(upload_to="photos")
+    featured_photo = models.CharField(max_length=300)
     category = models.CharField(max_length=5, choices=CATEGORIES)
     capacity = models.PositiveIntegerField(max_length=3)
 

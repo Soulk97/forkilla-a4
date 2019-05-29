@@ -2,7 +2,7 @@
 {% block title %}{{restaurant.name}}{% endblock %}
 {% block content %}
 
-<nav aria-label="breadcrumb">
+<nav aria-label="breadcrumb"  style="margin-top: 1rem;">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="{% url 'index'%}">Home</a></li>
     <li class="breadcrumb-item"><a href="{% url 'restaurants' restaurant.city %}">{{restaurant.city|title}}</a></li>
@@ -14,7 +14,7 @@
 <div class="card mb-3" style="width: 100%;">
     <div class="row no-gutters">
         <div class="col-md-4" >
-            <img src="{{restaurant.featured_photo.url}}" class="card-img" style="height: 100%;">
+            <img src="{{restaurant.featured_photo}}" class="card-img" style="height: 100%;" alt="{{restaurant.name}}">
         </div>
         <div class="col-md-8">
             <div class="card-body">
@@ -42,25 +42,29 @@
 
 <br><br>
 
-<form method="POST" action="{% url 'review' restaurant.restaurant_number %}">
+<form method="post" action="{% url 'review' restaurant.restaurant_number %}">
     <div class="form-group">
         {% csrf_token %}
         <label for="id_comment"> <h4>Make a Review:</h4> </label>
         <textarea name="comment" class="form-control" rows="3" placeholder="Comment here..." required id="id_comment"></textarea>
         <br>
-        <button class="btn btn-primary btn-block" type="submit" name="comment">Review</button>
+        <button class="btn btn-primary btn-block" type="submit" name="reviwed">Review</button>
     </div>
 </form>
 
-
 <div style="width: 100%">
-    <h4>Reviews:</h4>
-    <br>
-    {% for rev in restaurant.comments.all %}
-        <p>{{rev.comment}}</p>
-        <br>
-    {% endfor %}
-</div>
+    <h3>Reviews:</h3>
 
+    {% for rev in restaurant.comments.all %}
+        <div class="media border p-3">
+            <img src="https://s3.eu-west-3.amazonaws.com/sd2019-a4/images/user_default_image.jpg" alt="user static pic"  class="mr-3 mt-3 rounded-circle" style="width: 60px;">
+            <div class="media-body">
+                <h4><strong>{{rev.user.username}}</strong></h4>
+                <p>{{rev.comment}}</p>
+            </div>
+        </div>
+    {% endfor %}
+
+</div>
 
 {% endblock %}
