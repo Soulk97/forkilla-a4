@@ -27,6 +27,7 @@ router = routers.DefaultRouter()
 router.register(r'restaurants', views.RestaurantViewSet)
 
 urlpatterns = [
+    url(r'^$', include('forkilla.urls')),
     url(r'^forkilla/', include('forkilla.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^accounts/login/$',  login,  name='login'),
