@@ -13,7 +13,7 @@ from datetime import datetime
 
 # Restful
 from django.contrib.auth.models import User, Group
-from rest_framework import viewsets
+from rest_framework import viewsets, permissions
 from .serializers import RestaurantSerializer
 
 @login_required
@@ -257,6 +257,8 @@ class RestaurantViewSet(viewsets.ModelViewSet):
     """
     queryset = Restaurant.objects.all().order_by('category')
     serializer_class = RestaurantSerializer
+    permission_classes = permissions.DjangoModelPermissionsOrAnonReadOnly
+
 
 def handler404(request):
     response = render(request, 'forkilla/404.html', {})
@@ -265,6 +267,6 @@ def handler404(request):
 
 
 def handler500(request):
-    response = render(request,'forkilla/500.html',{})
+    response = render(request,'forkilla/500.html', {})
     response.status_code = 500
     return response

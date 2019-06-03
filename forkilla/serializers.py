@@ -1,6 +1,7 @@
 from .models import Restaurant
 from rest_framework import serializers
 
+
 class RestaurantSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Restaurant
@@ -10,3 +11,4 @@ class RestaurantSerializer(serializers.HyperlinkedModelSerializer):
             'city', 'country', 'featured_photo', 'category',
             'capacity'
         )
+
