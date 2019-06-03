@@ -257,7 +257,7 @@ class RestaurantViewSet(viewsets.ModelViewSet):
     """
     queryset = Restaurant.objects.all().order_by('category')
     serializer_class = RestaurantSerializer
-    permission_classes = permissions.DjangoModelPermissionsOrAnonReadOnly
+    permission_classes = (permissions.DjangoModelPermissionsOrAnonReadOnly,)
 
 
 def handler404(request):
