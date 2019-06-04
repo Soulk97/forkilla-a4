@@ -278,7 +278,7 @@ class RestaurantViewSet(viewsets.ModelViewSet):
         if price_average:
             queryset = queryset.exclude(price_average__gt=price_average)
 
-        return queryset
+        return queryset.order_by("price_average")
 
 
 def handler404(request):
