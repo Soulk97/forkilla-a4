@@ -291,3 +291,7 @@ def handler500(request):
     response = render(request,'forkilla/500.html', {})
     response.status_code = 500
     return response
+
+
+def comparator(request):
+    return render(request, "forkilla/comparator.html")
