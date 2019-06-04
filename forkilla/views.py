@@ -294,4 +294,11 @@ def handler500(request):
 
 
 def comparator(request):
-    return render(request, "forkilla/comparator.html")
+    restaurant_categories = Restaurant.CATEGORIES
+    context = {
+        'viewedrestaurants': _check_session(request)
+    }
+
+    
+
+    return render(request, "forkilla/comparator.html", context)

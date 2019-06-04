@@ -60,6 +60,7 @@
             </form>
 
             {% if user.is_authenticated %}
+                <a class="btn btn-outline-primary" href="{% url 'comparator'%}">Comparator</a>
                 <div class="dropdown">
                     <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         {{user.username}}
