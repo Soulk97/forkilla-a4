@@ -1,8 +1,7 @@
-from django import forms
 from django.db.models import Q
 from django.shortcuts import render, reverse
 
-from django.http import HttpResponse, HttpResponseNotFound, HttpResponseRedirect
+from django.http import HttpResponseRedirect
 
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
@@ -12,9 +11,9 @@ from .forms import ReservationForm, ReviewForm
 from datetime import datetime
 
 # Restful
-from django.contrib.auth.models import User, Group
 from rest_framework import viewsets, permissions
 from .serializers import RestaurantSerializer
+
 
 @login_required
 def add_comment(request, restaurant_number=""):
@@ -34,6 +33,7 @@ def add_comment(request, restaurant_number=""):
         review.save()
 
     return details(request, restaurant_number)
+
 
 def index(request):
     viewedrestaurants = _check_session(request)
@@ -259,9 +259,21 @@ class RestaurantViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows Restaurants to be viewed or edited.
     """
-    queryset = Restaurant.objects.all().order_by('category')
     serializer_class = RestaurantSerializer
     permission_classes = (permissions.DjangoModelPermissionsOrAnonReadOnly,)
+
+    def get_queryset(self):
+        category = self.request.query_params.get('category', None)
+        city = self.request.query_params.get('city', None)
+        price = self.request.query_params.get('price', None)
+
+        your_values = {'category': category, 'city': city, 'average_price': price}
+        arguments = {}
+        for k, v in your_values.items():
+            if v:
+                arguments[k] = v
+
+        return Restaurant.objects.filter(**arguments)
 
 
 def handler404(request):

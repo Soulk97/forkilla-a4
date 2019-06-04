@@ -24,7 +24,7 @@ from forkilla import views
 
 # API
 router = routers.DefaultRouter()
-router.register(r'restaurants', views.RestaurantViewSet)
+router.register(r'restaurants', views.RestaurantViewSet, base_name='Restaurants')
 
 urlpatterns = [
     url(r'^forkilla/', include('forkilla.urls')),
