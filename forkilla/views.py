@@ -265,15 +265,20 @@ class RestaurantViewSet(viewsets.ModelViewSet):
     def get_queryset(self):
         category = self.request.query_params.get('category', None)
         city = self.request.query_params.get('city', None)
-        price = self.request.query_params.get('price', None)
+        price_average = self.request.query_params.get('price_average', None)
 
-        your_values = {'category': category, 'city': city, 'price_average': price}
+        your_values = {'category': category, 'city': city}
         arguments = {}
         for k, v in your_values.items():
             if v:
                 arguments[k] = v
 
-        return Restaurant.objects.filter(**arguments)
+        queryset = Restaurant.objects.filter(**arguments)
+
+        if price_average:
+            queryset = queryset.exclude(price_average__gt=price_average)
+
+        return queryset
 
 
 def handler404(request):
