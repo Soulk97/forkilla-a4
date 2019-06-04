@@ -20,12 +20,16 @@ from .serializers import RestaurantSerializer
 def add_comment(request, restaurant_number=""):
     restaurant = Restaurant.objects.get(restaurant_number=restaurant_number)
     if request.method == "POST":
+
         comment = request.POST['comment']
+        ratio = request.POST['ratio']
         user = request.user
+
         review = Review()
         review.restaurant = restaurant
         review.user = user
         review.comment = comment
+        review.ratio = ratio
 
         review.save()
 

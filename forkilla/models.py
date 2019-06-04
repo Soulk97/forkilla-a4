@@ -87,7 +87,16 @@ class RestaurantInsertDate(models.Model):
 
 
 class Review(models.Model):
+    RATES = (
+        ("0", "0"),
+        ("1", "1"),
+        ("2", "2"),
+        ("3", "3"),
+        ("4", "4"),
+        ("5", "5"),
+    )
 
     restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE, related_name='comments')
     comment = models.TextField()
+    ratio = models.CharField(max_length=1,choices=RATES, default='-')
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)

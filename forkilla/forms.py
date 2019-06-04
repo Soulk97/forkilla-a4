@@ -12,4 +12,4 @@ class ReservationForm(forms.ModelForm):
 class ReviewForm(forms.ModelForm):
     class Meta:
         model = Review
-        fields = ["comment", ]
+        fields = ["comment","ratio" ]

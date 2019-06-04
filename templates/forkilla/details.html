@@ -42,13 +42,28 @@
 
 <br><br>
 
-<form method="post" action="{% url 'review' restaurant.restaurant_number %}">
+<form method="POST" action="{% url 'review' restaurant.restaurant_number %}">
     <div class="form-group">
         {% csrf_token %}
         <label for="id_comment"> <h4>Make a Review:</h4> </label>
         <textarea name="comment" class="form-control" rows="3" placeholder="Comment here..." required id="id_comment"></textarea>
+        <div class="form-group">
+            <label for="id_ratios">Ratio:</label>
+            <select class="form-control" name="ratio" required id="id_ratios">
+
+                <option value="" selected>---------</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+
+            </select>
+        </div>
         <br>
-        <button class="btn btn-primary btn-block" type="submit" name="reviwed">Review</button>
+        <button class="btn btn-primary btn-block" type="submit">Review</button>
     </div>
 </form>
 
@@ -60,7 +75,7 @@
             <img src="https://s3.eu-west-3.amazonaws.com/sd2019-a4/images/user_default_image.jpg" alt="user static pic"  class="mr-3 mt-3 rounded-circle" style="width: 60px;">
             <div class="media-body">
                 <h4><strong>{{rev.user.username}}</strong></h4>
-                <p>{{rev.comment}}</p>
+                <p>{{rev.comment}}<br><br><strong>Rate: {{rev.ratio}} / 5</strong></p>
             </div>
         </div>
     {% endfor %}
