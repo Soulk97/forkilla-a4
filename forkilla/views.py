@@ -267,7 +267,7 @@ class RestaurantViewSet(viewsets.ModelViewSet):
         city = self.request.query_params.get('city', None)
         price = self.request.query_params.get('price', None)
 
-        your_values = {'category': category, 'city': city, 'average_price': price}
+        your_values = {'category': category, 'city': city, 'price_average': price}
         arguments = {}
         for k, v in your_values.items():
             if v:
