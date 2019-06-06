@@ -73,9 +73,17 @@
         const ct = $('#id_city_compare');
         const pri_Z = $('#id_price_compare');
 
-        if(kt_go.val() != ""){filters += 'category= ' + kt_go.val();}
-        if(ct.val() != ''){filters.length > 2 ? filters += '&city= ' + ct.val() : filters += 'city= ' + ct.val();}
-        if(pri_Z.val() != '' & pri_Z.val() >= 0){filters.length > 2 ? filters += '&price= ' + pri_Z.val() : filters += 'price= ' + pri_Z.val(); :}
+        if(kt_go.val() !== ''){filters += 'category= ' + kt_go.val();}
+
+        if(ct.val() !== ''){
+          if(filters.length > 2){ filters += '&city= ' + ct.val();}
+          else{ filters += 'city= ' + ct.val();}
+        }
+
+        if(pri_Z.val() !== ''){
+          if(filters.length > 2){ filters += '&price= ' + pri_Z.val();}
+          else{filters += 'price= ' + pri_Z.val();}
+        }
 
         rest.empty();
 
@@ -92,7 +100,7 @@
 
                         '<div class="card">' +
 
-                            '<a href='+"{% url 'details' ' + restaurant.restaurant_number +' %}">' +
+                            '<a href="{% url '+'details'+ restaurant.restaurant_number +' %}'+'">' +
                                  '<img class="featured-image" src="'+ restaurant.featured_photo +'"'+'alt="'+restaurant.name+'"/>' +
                             '</a>' +
 
