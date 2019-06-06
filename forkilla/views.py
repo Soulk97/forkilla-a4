@@ -7,7 +7,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
 
 from .models import Restaurant, ViewedRestaurants, RestaurantInsertDate, Reservation, Review
-from .forms import ReservationForm, ReviewForm
+from .forms import ReservationForm
 from datetime import datetime
 
 # Restful
@@ -76,8 +76,6 @@ def details(request, restaurant_number):
         lastviewed = RestaurantInsertDate(viewedrestaurants=viewedrestaurants, restaurant=restaurant)
         lastviewed.save()
 
-        form = ReviewForm()
-
         reviews = Review.objects.filter(restaurant=restaurant)
         if reviews:
             print("there's a review")
@@ -85,14 +83,12 @@ def details(request, restaurant_number):
                 'restaurant': restaurant,
                 'viewedrestaurants': viewedrestaurants,
                 'reviews': reviews,
-                'form': form
             }
         else:
             print("No review")
             context = {
                 'restaurant': restaurant,
                 'viewedrestaurants': viewedrestaurants,
-                'form': form
             }
 
     except Restaurant.DoesNotExist:
@@ -299,6 +295,6 @@ def comparator(request):
         'viewedrestaurants': _check_session(request)
     }
 
-    
+
 
     return render(request, "forkilla/comparator.html", context)
