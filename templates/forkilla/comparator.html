@@ -43,7 +43,7 @@
       <input class="form-control" type="text" id="id_city_compare" placeholder="City">
     </div>
 
-      <button class="btn btn-success btn-block" type="button" id="comparar">Compare</button>
+      <button class="btn btn-success btn-block" type="button" id="id_comparar">Compare</button>
 
       </div>
 
@@ -61,9 +61,9 @@
 </div>
 {% endblock %}
 
-{% block javascript %}
-<script>
-    function comparate(){
+{% block scripts %}
+<script type="text/javascript">
+    $('#id_comparar').click(function(){
         var ips = {{ips}};
         var rest = $('#comparator_success');
 
@@ -73,45 +73,39 @@
         const ct = $('#id_city_compare');
         const pri_Z = $('#id_price_compare');
 
-        if(kt_go.val() !== ""){
-            parameters += 'category= ' + kt_go.val();
-        }
+        if(kt_go.val() != ""){parameters += 'category= ' + kt_go.val();}
+        if(ct.val() != ''){parameters.length > 2 ? parameters += '&city= ' + ct.val() : parameters += 'city= ' + ct.val();}
+        if(pri_Z.val() != '' & pri_Z.val() >= 0){parameters.length > 2 ? parameters += '&price= ' + pri_Z.val() : parameters += 'price= ' + pri_Z.val(); :}
 
-        if(ct.val() !== ''){
-            parameters.length > 2 ? parameters += '&city= ' + ct.val() : parameters += 'city= ' + ct.val();
-        }
-
-        if(pri_Z.val() !== ''){
-            parameters.length > 2 ? parameters += '&price= ' + pri_Z.val() : parameters += 'price= ' + pri_Z.val(); :
-        }
-
-        restaurants.empty();
+        rest.empty();
 
         $.ajax({
             url: ips[0] + '/api/restaurants/'+parameters,
             type: 'GET',
-            dataType: 'json'
+            dataType: 'json',
             success: function (data){
                 data.results.forEach(function(restaurant){
 
-                    restaurant_card = '<div class="col-3" style="width: 24vw;">' +
+                    rest_card =
 
-                    + '<div class="card">' +
+                    '<div class="col-3" style="width: 24vw;">' +
 
-                    '<a href="{% url 'details' restaurant.restaurant_number %}">' +
-                    '<img class="featured-image" src="{{restaurant.featured_photo}}"alt="{{restaurant.name}}">' +
-                    '</a>' +
+                        '<div class="card">' +
 
-                    '<div class="card-body">'
-                        '<h5 class="card-title"><strong>{{restaurant.name}}</strong></h5>'
-                        '<p class="card-text">{{restaurant.menu_description}}<br>{{restaurant.price_average}}</p>'
-                    '</div>' +
+                            '<a href="{% url 'details' restaurant.restaurant_number %}">' +
+                                 '<img class="featured-image" src="'+ restaurant.featured_photo +'"'+'alt="'+restaurant.name+'"/>' +
+                            '</a>' +
 
-                    '</div>' +
+                            '<div class="card-body">'+
+                                '<h5 class="card-title"><strong>'+restaurant.name+'</strong></h5>'+
+                                '<p class="card-text">'+restaurant.menu_description+'<br>'+restaurant.price_average+'</p>'+
+                            '</div>' +
+
+                        '</div>' +
 
                     '</div>';
 
-                    rest.append(restaurant_card);
+                    rest.append(rest_card);
                 });
             },
 
@@ -121,8 +115,7 @@
 
             }
         });
-    }
+    });
 
 </script>
 {% endblock %}
-
