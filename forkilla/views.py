@@ -192,7 +192,8 @@ def checkout(request):
     context = {
         'restaurant': restaurant,
         'reservation': current_reservation,
-        'result': result
+        'result': result,
+        'viewedrestaurants': _check_session(request)
     }
 
     return render(request, 'forkilla/checkout.html', context)
@@ -293,12 +294,9 @@ def handler500(request):
     return response
 
 
-def comparator(request):
-    restaurant_categories = Restaurant.CATEGORIES
+def comparator(request, ips):
     context = {
-        'viewedrestaurants': _check_session(request)
+        'viewedrestaurants': _check_session(request),
+        'ips' : ips,
     }
-
-    
-
     return render(request, "forkilla/comparator.html", context)

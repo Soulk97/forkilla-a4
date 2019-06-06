@@ -14,7 +14,7 @@
                     <div class="col col-lg" style="width: 24vw;">
                         <div class="card" style="width: 100%; height: auto;">
                             <a href="{% url 'details' reservation.restaurant.restaurant_number %}">
-                                <div class="featured-image" style="background-image:url('{{reservation.restaurant.featured_photo.url}}')" alt="{{reservation.restaurant.name}}"></div>
+                                <div class="featured-image" style="background-image:url('{{reservation.restaurant.featured_photo}}')" alt="{{reservation.restaurant.name}}"></div>
                             </a>
                             <div class="card-body" style="text-align: center;">
                                 <h5 class="card-title"><strong>{{reservation.restaurant.name}}</strong></h5>
