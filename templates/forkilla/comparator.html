@@ -61,26 +61,26 @@
 </div>
 {% endblock %}
 
-{% block scripts %}
+{% block javascript %}
 <script type="text/javascript">
     $('#id_comparar').click(function(){
-        var ips = {{ips}};
-        var rest = $('#comparator_success');
+        var webs = {{ips}};
+        var filtered_restaurants = $('#comparator_success');
 
-        var parameters = '?';
+        var filters = '?';
 
         const kt_go = $('#id_category_compare');
         const ct = $('#id_city_compare');
         const pri_Z = $('#id_price_compare');
 
-        if(kt_go.val() != ""){parameters += 'category= ' + kt_go.val();}
-        if(ct.val() != ''){parameters.length > 2 ? parameters += '&city= ' + ct.val() : parameters += 'city= ' + ct.val();}
-        if(pri_Z.val() != '' & pri_Z.val() >= 0){parameters.length > 2 ? parameters += '&price= ' + pri_Z.val() : parameters += 'price= ' + pri_Z.val(); :}
+        if(kt_go.val() != ""){filters += 'category= ' + kt_go.val();}
+        if(ct.val() != ''){filters.length > 2 ? filters += '&city= ' + ct.val() : filters += 'city= ' + ct.val();}
+        if(pri_Z.val() != '' & pri_Z.val() >= 0){filters.length > 2 ? filters += '&price= ' + pri_Z.val() : filters += 'price= ' + pri_Z.val(); :}
 
         rest.empty();
 
         $.ajax({
-            url: ips[0] + '/api/restaurants/'+parameters,
+            url: webs[0] + '/api/restaurants/'+filters,
             type: 'GET',
             dataType: 'json',
             success: function (data){
@@ -92,7 +92,7 @@
 
                         '<div class="card">' +
 
-                            '<a href="{% url 'details' restaurant.restaurant_number %}">' +
+                            '<a href='+"{% url 'details' ' + restaurant.restaurant_number +' %}">' +
                                  '<img class="featured-image" src="'+ restaurant.featured_photo +'"'+'alt="'+restaurant.name+'"/>' +
                             '</a>' +
 
@@ -105,13 +105,13 @@
 
                     '</div>';
 
-                    rest.append(rest_card);
+                    filtered_restaurants.append(rest_card);
                 });
             },
 
             error: function(){
 
-                $('#comparator_failed').append('<h3 class="error">Error: with the api of: ' + ips[i] + '</h3>');
+                $('#comparator_failed').append('<h3 class="error">Error with the api of: ' + webs[i] + '</h3>');
 
             }
         });
